@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+
+.App-content {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.App-timer {
+  font-family: 'Spicy Rice';
+  font-size: 80px;
+}
+
+.timer {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.timer-start {
+  padding: 10px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-family: Spicy Rice;
+  font-size: medium;
+  background: transparent;
+}
+
+.hide {
+  display: none;
+}

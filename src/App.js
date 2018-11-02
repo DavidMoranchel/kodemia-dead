@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Timer from './components/Timer/Timer';
 import './App.css';
 
 class App extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      challenges: {
+        'one': 'Reto 1',
+        'two': 'Reto 2',
+        'three': 'Reto 3',
+        'four': 'Reto 4'
+      }
+    };
+  }
+
   render() {
+    let challengesObj = this.state.challenges;
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <p>Retos</p>
         </header>
+        <Timer minuts={0} seconds={10} text={ challengesObj.one }></Timer>
       </div>
     );
   }
